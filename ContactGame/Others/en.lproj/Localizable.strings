@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  ContactGame
+
+  Created by Beliy.Bear on 09.07.2023.
+  
+*/
+
+"Контакт" = "Contact";
+"Загрузка..." = "Downloading...";
+"Обновить слово" = "Update word";
