@@ -6,6 +6,21 @@
   
 */
 
+// MainView
+
 "Контакт" = "Contact";
 "Загрузка..." = "Downloading...";
 "Обновить слово" = "Update word";
+
+// InfoView
+
+"Правила игры Контакт" = "Contact's Rules";
+"" = "";
+"1. Соберите группу людей (не меньше трёх)." = "1. Collect a group of people (at least three).";
+"2. Один участник становится ведущим и загадывает слово (нарицательное существительное)." = "2. One participant becomes the presenter and makes the word (negative).";
+"3. Ведущий сообщает остальным только первую букву загаданного слова." = "3. The presenter only informs the others the first letter of the word ruined.";
+"4. Участники по очереди придумывают и описывают слова на эту букву." = "4. Participants in turn invent and describe words on this letter.";
+"5. Если ведущий угадывает слово, оно выбывает из игры и участники продолжают игру с этой же буквой." = "5. If the presenter guesses the word, it is out of the game and the participants continue the game with the same letter.";
+"6. Если ведущий не угадывает слово, другие участники пытаются угадать его. Если они угадывают, они говорят \"Есть контакт!\" и вместе отсчитывают до 6 и произносят слово." = "6. If the presenter fails to guess the word, other participants try to guess it. If they guess, they say there is contact! And together count to six and say the word.";
+"7. Если \"контакт\" произошел, ведущий называет следующую букву своего слова. Следующий участник должен придумать слово, начинающееся на эти две буквы." = "7. If the \"contact\" occurred, the presenter calls the next letter of his word. The next participant should come up with a word beginning with these two letters.";
+"8. Игра продолжается, пока не будет угадано ведущим загаданное слово." = "8. The game continues until the presenter has guessed the word.";

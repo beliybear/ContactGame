@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var word = "Загрузка...".localized
     
@@ -20,13 +20,24 @@ struct ContentView: View {
                 Button(action: loadRandomWord) {
                     Text("Обновить слово".localized)
                         .foregroundStyle( colorScheme == .dark ? Color.black : Color.white)
+                        .frame(maxWidth: 350)
                 }
-                .frame(width: 200, height: 50)
+                .frame(minWidth: 200, maxWidth: 400, maxHeight: 50)
                 .background( colorScheme == .dark ? Color.white : Color.black )
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .padding()
                 .fontWeight(.bold)
-            }.navigationBarTitle("Контакт".localized, displayMode: .inline)
+            }
+            .navigationBarTitle("Контакт".localized, displayMode: .inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: InfoView()) {
+                        Image(systemName: "questionmark.circle")
+                            .resizable()
+                            .frame(width: 24, height: 24)
+                    }
+                }
+            }
         }
         .onAppear(perform: loadRandomWord)
     }
@@ -52,5 +63,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MainView()
 }
